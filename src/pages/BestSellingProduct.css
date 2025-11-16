@@ -1,0 +1,87 @@
+/* ============================
+   BEST SELLING PRODUCTS
+============================ */
+
+.bsp-section {
+  padding: 70px 8%;
+  background: #fafafa;
+  text-align: center;
+}
+
+.bsp-title {
+  font-size: 2.4rem;
+  color: #222;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.bsp-title span {
+  color: #f91e42;
+}
+
+.bsp-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.bsp-card {
+  background: #fff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+}
+
+.bsp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.bsp-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.bsp-card h3 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.bsp-card p {
+  font-size: 0.95rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* BUTTON */
+.bsp-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 20px;
+  background: #f91e42;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.bsp-btn:hover {
+  background: #d31835;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bsp-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

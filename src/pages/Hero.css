@@ -1,0 +1,96 @@
+/* ============================
+   HERO SECTION
+============================ */
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 8%;
+  background: #ffffff;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* TEXT */
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.2;
+}
+
+.hero-content h1 span {
+  color: #f91e42;
+}
+
+.hero-content p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* BUTTON (converted to anchor for proper navigation) */
+.hero-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background-color: #f91e42;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #d31835;
+}
+
+/* IMAGE */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 480px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ============================
+   RESPONSIVE DESIGN
+============================ */
+
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    padding: 60px 5%;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
